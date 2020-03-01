@@ -1,3 +1,10 @@
 import '../css/index.css';
+import text from './text';
 
-document.body.innerHTML = '<p>Hello, can you see me?</p>';
+text();
+
+if (module.hot) {
+  module.hot.accept('./text.js', function() {
+    text();
+  });
+}
