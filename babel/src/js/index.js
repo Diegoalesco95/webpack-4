@@ -1,5 +1,7 @@
 import '../css/index.css';
-import text from './text';
+import search from './search';
+import render from './render';
+/* import text from './text';
 
 text();
 
@@ -8,3 +10,14 @@ if (module.hot) {
     text();
   });
 }
+*/
+
+const id = prompt('¿Quién es ese pokemon?');
+
+search(id)
+  .then(data => {
+    render(data);
+  })
+  .catch(() => {
+    console.log('No se encotró el pokemon');
+  });
