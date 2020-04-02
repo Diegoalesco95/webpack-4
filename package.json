@@ -27,7 +27,7 @@
   "author": "Diego Osorio <Diegoalesco95@hotmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.8.4",
+    "@babel/runtime": "^7.8.7",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
